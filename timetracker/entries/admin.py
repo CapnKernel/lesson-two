@@ -10,3 +10,4 @@ class EntryAdmin(admin.ModelAdmin):
 
 admin.site.register(models.Entry, EntryAdmin)
 admin.site.register(models.Project)
+admin.site.register(models.Client)

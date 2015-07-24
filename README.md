@@ -10,12 +10,12 @@ https://melbdjango.github.io/lesson-two/
 
 If you did the homework [last week][lesson-one], you should already have a virtualenv that you can use this week.
 
-- [ ] [Fork this repository][gh-fork]
-- [ ] Clone the repo to your own machine
-- [ ] Normalise the model we created in class by creating new [Django models][dj-models] that better express the
+- [X] [Fork this repository][gh-fork]
+- [X] Clone the repo to your own machine
+- [X] Normalise the model we created in class by creating new [Django models][dj-models] that better express the
       relationships. You'll need to add [ForeignKey relationships][dj-fk] between your models and our existing one.
-- [ ] Update `admin.py` so all your new models show
-- [ ] Bonus Points: Use [Django's migrations][dj-migrations] in a way that allows us to keep existing data in our model
+- [X] Update `admin.py` so all your new models show
+- [X] Bonus Points: Use [Django's migrations][dj-migrations] in a way that allows us to keep existing data in our model
 
 When you've completed some or all of the homework please make a [Pull Request][gh-pr] against this repository.
 If you submit your work before Wednesday evening we'll give you feedback before the next class.
