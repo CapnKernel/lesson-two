@@ -11,13 +11,7 @@ def rewrite_client_str_to_client_model(apps, schema_editor):
     # see if there's already a corresponding Client.  If not, create it.
     # Then set the client property to be the new or existing Client.
     for project in Project.objects.all():
-        # Is there an existing client of this name?
-        try:
-            c = Client.objects.get(name=project.client_as_str)
-        except Client.DoesNotExist:
-            # No, so create it
-            c = Client(name=project.client_as_str)
-            c.save()
+        c, created = Client.objects.get_or_create(name=project.client_as_str)
         project.client = c
         project.save()
 
