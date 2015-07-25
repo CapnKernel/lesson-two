@@ -38,6 +38,11 @@ class Migration(migrations.Migration):
 
     # Switch from a charfield-based client, to a model-based one.
     operations = [
+        migrations.AlterField(
+            model_name='project',
+            name='client',
+            field=models.CharField(max_length=200, null=True),
+        ),
         # Move the existing client field to the side
         migrations.RenameField(
             model_name='project',
